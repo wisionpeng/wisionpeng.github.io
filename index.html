@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+    /* set style of buttons on navigation bar */
+    #navigation_bar button {
+        padding-left: 26px;
+		padding-right: 26px;
+        color: #436076;
+        text-decoration: none;
+        font-family: Roboto, Microsoft JhengHei, sans-serif;
+        font-size: 14px;
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        height: 50px;
+    }
+    #navigation_bar button.active {
+        background-color: #DCAA6D;
+    }
+    #navigation_bar button:hover {
+        background-color: #DCAA6D;
+    }
+    /* set style of tabs */
+    .tabcontent {
+        display: none;
+    }
+    div.tabcontent {
+        font-family: Roboto, Microsoft JhengHei, sans-serif;
+        font-size: 15px;
+    }
+    div#personal_info_bar p {
+        margin-bottom: 0;
+    }
+    </style>
+    <title>homepage</title>
+</head>
+
+<body style="margin: 0" data-gr-c-s-loaded="true">
+<div style="min-width:1300px;">
+    <img src="/1.jpg" style="float: left; margin-top: 35px; margin-left: 10px; border-radius: 4px;width: 150px;">
+    <div id="personal_info_bar" style="background-color: #436076; min-height: 270px; margin-top: 0px;">
+        <div id="personal_info" style="display:inline-block; 175px; max-width: 1000px; padding-top: 25px">
+            <h1 style="margin-left: 30px; color: #DCAA6D; font-family: Roboto,Microsoft JhengHei,sans-serif">俞奎</h1>
+            <!--<h4 style="color: #FFFFFF; font-family: Arial">PhD in Computer Science, University of Waterloo</h4>-->
+            <p style="margin-left: 30px; color: #DCAA6D; line-height: 1.5; font-size: 17px; font-weight: bold; font-family: Roboto,Microsoft JhengHei,sans-serif">教授(博士生导师)</p>
+            <p style="margin-left: 30px; color: #DCD5C8; line-height: 1.4; font-size: 15px; font-family: Roboto,Microsoft JhengHei,sans-serif">
+				因果推断与可信智能课题组<br>
+				合肥工业大学计算机与信息学院<br>
+				大数据知识工程教育部重点实验室<br>
+				yukui@hfut.edu.cn
+			</p>
+        </div>
+		<img src="/4.jpg"style="margin-top:75px; margin-right:20px; float:right; border-radius: 4px; height: 170px;">
+		<img src="/3.jpg" style="margin-top:75px; margin-right:20px; float:right; border-radius: 4px; height: 170px;">
+		<img src="/2.png" style="margin-top:75px; margin-right:20px; float:right; border-radius: 4px; height: 170px;">
+    </div>
+    <div id="navigation_background" style="background-color: #DCD5C8; min-height: 50px;">
+        <div id="navigation_bar" style="margin-left: 10px; height: inherit;">
+			<button class="tablink active" onclick="switchTab(event, 'Group News')">团队新闻</button>
+            <button class="tablink" onclick="switchTab(event, 'Research Interests')">个人简介</button>
+            <button class="tablink" onclick="switchTab(event, 'Awards')">科研项目</button>
+            <button class="tablink" onclick="switchTab(event, 'Student Achievements')">学生成就</button>
+            <button class="tablink" onclick="switchTab(event, 'Courses')">教学工作</button>
+            <button class="tablink" onclick="switchTab(event, 'Publications')">主要论著</button>
+            <button class="tablink" onclick="switchTab(event, 'Professional Services')">学术兼职</button>
+            <button class="tablink" onclick="switchTab(event, 'Group Members')">团队成员</button>
+            <button class="tablink" onclick="switchTab(event, 'Research Links')">软件代码</button>
+        </div>
+    </div>
+    <div id="content_background" style="width: 100%; min-height: 450px; background-color: #FFFFFF">
+		<div id="Group News" class="tabcontent" style="width: 70%; margin-left: 10px; display: block;">
+		    <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+		border-bottom: 2px solid #DCD5C8; line-height: 1.625">团队新闻</p>
+		    <ul>
+		     <li style="line-height: 1.625">2023-09: 祝贺俞奎教授、王浩教授、梁吉业教授编著的《因果推断导论》正式出版（国内学者出版的第一本因果推断入门书籍）！</li>  
+		    <li style="line-height: 1.625">2023-08: 祝贺团队毕业的两位博士生凌兆龙和杨帅同时获批国家自然科学基金青年基金项目！</li>   
+		    <li style="line-height: 1.625">2023-08: 团队负责人俞奎教授成功获批第二项国家自然科学基金面上项目“面向隐私保护数据的联邦因果关系推断算法研究”！</li>  
+		    <li style="line-height: 1.625">2023-08: our recent paper titled "Feature Selection for Efficient Local-to-Global Bayesian Network Structure Learning" 被数据挖掘领域权威期刊《ACM Transactions on Knowledge Discovery from Data (TKDD)》正式录用(CCF B类)!</li>
+		    <li style="line-height: 1.625">2023-08: 祝贺博士生郭贤杰荣获2023年度国家留学基金委全额资助公派到新加坡南洋理工大学学习1年！</li>
+		   <li style="line-height: 1.625">2023-07: 团队在2023年7月苏州举行的中国计算机学会第38届计算机应用大会（NCCA'23）上成功举办 “因果机器学习及其应用论坛” 论坛！</li>
+		    <li style="line-height: 1.625">2023-06: 祝贺本科生曹大元、宋余琨荣获2023年第25届中国机器人及人工智能大赛(全国决赛)二等奖！</li>
+		    <li style="line-height: 1.625">2023-06: our recent paper titled "Towards Privacy-Aware Causal Structure Learning in Federated Setting" 被大数据领域权威期刊《IEEE Transactions on Big Data(TBD)》正式录用(CCF C类)!</li>
+	            <li style="line-height: 1.625">2023-06: our recent paper titled "Causal Feature Selection in the Presence of Sample Selection Bias" 被机器学习领域知名期刊《ACM Transactions on Intelligent Systems and Technology(TIST)》正式录用!</li>
+	            <li style="line-height: 1.625">2023-06: our recent paper titled "Adaptive Prototype Interaction Network for Few-shot Knowledge Graph Completion" 被机器学习领域权威期刊《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li>
+	            <li style="line-height: 1.625">2023-05: 祝贺本科生解弘艺、陶震、张君瑞、刘高杰主持的国家级大学生创新创业项目结题成绩为优秀！</li>
+		    <li style="line-height: 1.625">2023-05: 祝贺团队本科生解弘艺同学荣获安徽省优秀毕业生称号！</li>   
+		   <li style="line-height: 1.625">2023-04: our recent paper titled "Discovering Ancestral Instrumental Variables for Causal Inference from Observational Data" 被机器学习领域权威期刊《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li> 
+	            <li style="line-height: 1.625">2023-04: our recent paper titled "Adaptive Skeleton Construction for Accurate DAG Learning"被数据挖掘领域权威期刊IEEE Transactions on Knowledge and Data Engineering(TKDE)录用(CCF A类)!</li>     
+	            <li style="line-height: 1.625">2023-01: 祝贺硕士生杨雅静的硕士学位论文荣获2022年度安徽省计算机学会优秀硕士学位论文奖!</li>
+	            <li style="line-height: 1.625">2022-12: 祝贺博士生郭贤杰的硕士学位论文荣获2022年度安徽省优秀硕士学位论文奖!</li>
+		     <li style="line-height: 1.625">2022-12: 祝贺本科生宋余琨荣获2022年第四届全国高校计算机能力挑战赛C++组全国决赛一等奖!</li>
+	             <li style="line-height: 1.625">2022-12: 团队在2022年12月成功举办安徽省人工智能学会 “可信人工智能论坛” 线上论坛！</li>
+		    <li style="line-height: 1.625">2022-12: our recent paper titled "Independent Relation Representation with Line Graph for Cross-Lingual Entity Alignmen"被数据挖掘领域权威期刊IEEE Transactions on Knowledge and Data Engineering(TKDE)录用(CCF A类)!</li> 
+		    <li style="line-height: 1.625">2022-10: our recent paper titled " A Light Causal Feature Selection Approach to High-Dimensional Data"被数据挖掘领域权威期刊IEEE Transactions on Knowledge and Data Engineering(TKDE)录用(CCF A类)!</li> 
+	            <li style="line-height: 1.625">2022-10: our recent paper titled "Learning Inter-Entity-Interaction for Few-Shot Knowledge Graph Completion"被自然语言处理领域顶级会议EMNLP'22录用(CCF B类,清华A类)!</li> 
+		    <li style="line-height: 1.625">2022-08: our recent paper titled "Bootstrap-based Causal Structure Learning"被数据挖掘领域顶级会议CIKM'22录用(CCF B类)!</li> 
+	            <li style="line-height: 1.625">2022-07: 俞奎教授受邀在2022年7月在贵阳举行的中国多媒体大会“因果推理与多媒体泛化学习论坛”上做特邀报告!
+	            <li style="line-height: 1.625">2022-06: 祝贺本科生董凯月、丁卓雅、宋余琨、曹大元荣获2022年安徽省第八届互联网+大学生创新创业大赛创意组银奖一项！</li>
+	            <li style="line-height: 1.625">2022-05: 祝贺本科生陶震、张君瑞、杨辰荣获2022年（第15届）中国大学生计算机设计大赛省赛一等奖！</li>
+                    <li style="line-height: 1.625">2022-05: 祝贺蔡明珠、杨雅静、胡闻涛同学（2019级）顺利通过硕士论文答辩!指导的第二届硕士毕业生！</li>
+	            <li style="line-height: 1.625">2022-05: 祝贺杨帅同学（2019级）顺利通过博士论文答辩!指导的第二位博士毕业生（与王浩教授合作指导）！</li>
+	             <li style="line-height: 1.625">2022-05: our recent paper titled "Causal Feature Selection with Efficient Spouses Discovery" 被大数据领域权威期刊《IEEE Transactions on Big Data(TBD)》正式录用(CCF C类)!</li>
+	            <li style="line-height: 1.625">2022-05: our recent paper titled "Causal Feature Selection with Dual Correction" 被机器学习领域权威期刊《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li>
+	            <li style="line-height: 1.625">2022-03: 祝贺蔡明珠同学（硕士）荣获合肥工业大学优秀毕业生和安徽省优秀毕业生称号!</li>
+		    <li style="line-height: 1.625">2022-03: 祝贺杨雅静同学（硕士）荣获合肥工业大学优秀毕业生和安徽省优秀毕业生称号!</li>
+	             <li style="line-height: 1.625">2022-03: 科大讯飞医疗事业部来访，讨论因果学习在智慧医疗场景的落地与应用</li>
+	            <li style="line-height: 1.625">2022-03: our recent paper titled "A Drift-Sensitive Distributed LSTM Method for Short Text Steam Classification"被大数据领域权威期刊《IEEE Transactions on Big Data(TBD)》正式录用(CCF C类)!</li>
+		    <li style="line-height: 1.625">2022-03: our recent paper titled "Sufficient Dimension Reduction for Average Causal Effect Estimation"被数据挖掘领域权威期刊《Data Mining and Knowledge Discovery(DMKD)》正式录用(CCF B类)!</li>
+		     <li style="line-height: 1.625">2022-01: 俞奎教授受邀在2022年1月南昌举行的中国粒计算与知识发现学术会议“青年学者论坛”上做特邀报告!</li>
+			<li style="line-height: 1.625">2021-12: 祝贺博士生郭贤杰同学的硕士毕业论文荣获安徽省计算机学会优秀硕士学位论文奖!</li>
+			<li style="line-height: 1.625">2021-12: our recent paper titled"Error-Aware Markov Blanket Learning for Causal Feature Selection"被一区期刊《Information Sciences》正式录用(CCF B类)!</li>
+			<li style="line-height: 1.625">2021-12: our recent paper titled"Local Causal Discovery in Multiple Manipulated Datasets" 被机器学习领域权威期刊《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li>
+			<li style="line-height: 1.625">2021-12: our recent paper titled "Efficient Causal Structure Learning from Multiple Interventional Datasets with Unknown Targets" 被人工智能领域国际顶级学术会议AAAI'22正式录用(CCF A类)!</li>
+			<li style="line-height: 1.625">2021-12: our recent paper titled "Towards precise causal effect estimation from data with hidden variables” 被机器学习领域权威期刊《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li>
+			<li style="line-height: 1.625">2021-12: our recent paper titled "A New Skeleton-Neural DAG Learning Approach" 被数据挖掘领域国际知名学术会议PAKDD'22正式录用(CCF C类)!</li>
+			<li style="line-height: 1.625">2021-12: 祝贺本科生解弘艺、张君瑞、杨辰三位同学获2021年第三届全国高校计算机能力挑战赛-人工智能应用赛决赛二等奖! </li>
+			<li style="line-height: 1.625">2021-11: 团队获批科技部科技创新2030-"新一代人工智能” 重大项目:"跨媒体因果推断与可信机器学习"子课题一项！ 这是团队主持的第二项科技创新重大项目！</li>
+            <li style="line-height: 1.625">2021-11: our recent paper titled "PSL: an Algorithm for Partial Bayesian Network Structure Learning" 被数据挖掘领域权威期刊《ACM Transactions on Knowledge Discovery from Data (TKDD)》正式录用(CCF B类)!</li>
+             <li style="line-height: 1.625">2021-10: 俞奎教授受邀在2021年10月兰州举行的第八届全国智能信息处理学术会议“机器学习论坛”上做特邀报告!</li>
+             <li style="line-height: 1.625">2021-10: 祝贺蔡明珠(研三)和杨雅静(研三)两位同学荣获国家研究生奖学金!</li>
+            <li style="line-height: 1.625">2021-10: 祝贺杨帅同学(博三)荣获国家研究生奖学金!</li>
+            <li style="line-height: 1.625">2021-09: our recent paper titled "Causal Feature Selection with Missing Data" 被数据挖掘领域权威期刊《ACM Transactions on Knowledge Discovery from Data (TKDD)》正式录用(CCF B类)!</li>
+	    <li style="line-height: 1.625">2021-08: 团队论文“基于实例加权和双分类器的稳定学习算法”被国内计算机领域权威中文期刊《软件学报》正式录用！(CCF A类）</li>    
+            <li style="line-height: 1.625">2021-07: 祝贺本科生解弘艺、陶震、张君瑞、刘高杰、杨辰五位同学荣获安徽省第七届互联网+大学生创新创业大赛创意组金奖一项！</li>
+            <li style="line-height: 1.625">2021-07: 团队在2021年7月烟台举行的中国计算机学会人工智能大会（CCFAI'21）上成功举办 “因果学习论坛” 论坛！</li>
+	    <li style="line-height: 1.625">2021-07: 俞奎教授受邀在2021年7月成都举行的第三届全国大数据与人工智能科学大会“因果关系发现与因果性学习论坛”上做特邀报告！</li>
+            <li style="line-height: 1.625">2021-07: our recent paper titled "Multi-Label Feature Selection: a Local Causal Structure Learning Approach" 被机器学习领域权威期刊《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li>
+            <li style="line-height: 1.625">2021-06: our recent paper titled "Learning Causal Representations for Robust Domain Adaptation" 被数据挖掘领域权威期刊《IEEE Transactions on Knowledge and Data Engineering (TKDE)》正式录用(CCF A类)!</li>
+            <li style="line-height: 1.625">2021-05: 祝贺本科生解弘艺、陶震、张君瑞、刘高杰获批国家级大学生创新创业项目一项！</li>
+            <li style="line-height: 1.625">2021-05: 祝贺刘超凡、郭贤杰两位同学顺利通过硕士论文答辩！指导的第一届硕士毕业生！</li>
+            <li style="line-height: 1.625">2021-04: 祝贺郭贤杰同学(硕士)荣获安徽省优秀毕业生称号！</li>
+            <li style="line-height: 1.625">2021-02: our recent paper titled "Learning Cross-Lingual Mappings in Imperfectly Isomorphic Embedding Spaces" 被自然语言处理领域权威期刊《IEEE Transactions on Audio, Speech and Language Processing (TASLP)》正式录用(CCF B类, 清华A类)!</li>
+            <li style="line-height: 1.625">2020-10: 团队获批科技部科技创新2030-"新一代人工智能" 重大项目:"常识知识学习与因果分析"课题一项（俞奎教授为课题一负责人）！</li>
+            <li style="line-height: 1.625">2020-09: 祝贺团队的IEEE TPAMI文章 “Multi-Source Causal Feature Selection” 正式发表！</li>
+	    <li style="line-height: 1.625">2020-07: 团队因果特征选择综述文章"Causality-based Feature Selection: Methods and Evaluations"被顶级期刊ACM Computing Surveys正式录用！</li>
+            <li style="line-height: 1.625">2020-06: 祝贺博士生凌兆龙顺利通过博士论文答辩，入职安徽大学！指导的第一位博士毕业生（与王浩教授合作指导）！</li>
+            <li style="line-height: 1.625">2019-09: 祝贺博士生凌兆龙的ACM TIST文章 “BAMB: A Balanced Markov Blanket Discovery Approach to Feature Selectiony” 正式发表！</li>
+	    <li style="line-height: 1.625">2018-12: 祝贺团队的IEEE TNNLS文章 “Mining Markov Blankets Without Causal Sufficiency” 正式发表！</li>
+	    <li style="line-height: 1.625">2018-10: 团队获批国家自然科学基金面上项目“面向多源高维数据的局部因果关系挖掘研究”一项，这是俞奎教授2018年7月正式回国后获批的第一项国家级项目！</li>
+	    <li style="line-height: 1.625">2018-09: 祝贺团队的首届两位研究生刘超凡和郭贤杰同学正式入学加入因果计算团队！</li>
+		    </ul>
+		</div>
+        <div id="Research Interests" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+			<p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+			    border-bottom: 2px solid #DCD5C8; line-height: 1.625">个人简介</p>
+			<p style="padding-left: 20px; ">俞奎，合肥工业大学计算机与信息学院黄山学者特聘教授，博士生导师。2013年6月毕业于合肥工业大学计算机与信息学院，获工学博士学位(导师吴信东教授和王浩教授);2011.08-2012.08作为国家公派联合培养博士生在美国University of Massachusetts Boston计算机系从事合作研究(导师Wei Ding 教授);2013.10-2015.09在加拿大Simon Fraser University 计算科学学院从事博士后研究(合作导师Jian Pei教授);2015.10-2018.01作为研究员在澳大利亚University of South Australia信息技术与数学科学学院从事全职研究工作(合作导师jiuyong Li教授和Lin Liu教授)。 曾获2014中国计算机学会优秀博士学位论文奖和2014年度加拿大PIMS博士后奖。主持科技部科技创新2030-“新一代人工智能”重大项目课题、子课题、以及国家自然科学基金面上项目多项。安徽省人工智能学会副理事长，安徽省人工智能学会因果与认知智能专委会主任，中国人工智能学会不确定性人工智能专委会委员，粒计算与知识发现专委会委员；担任多个国际人工智能领域顶级会议的领域主席和程序委员会委员（如ICML、AAAI、KDD、IJCAI、CIKM等）和国际重要期刊的审稿人。</p>
+            <p style="margin: 0; padding-left: 20px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+                border-bottom: 2px solid #DCD5C8; line-height: 1.625">研究方向</p>
+            <ul>
+                <li style="line-height: 1.625">因果推断与可信机器学习</li>           
+                <li style="line-height: 1.625">知识图谱与自然语言处理</li>
+		<li style="line-height: 1.625">图像处理与视觉问答</li>
+            </ul>
+            <p style="margin: 0; padding-left: 20px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+                border-bottom: 2px solid #DCD5C8; line-height: 1.625">课题组</p>
+            <ul>
+                <li style="line-height: 1.625"><a target="_blank">因果推断与可信智能(Causal Inference and Trustworthy Intelligence，CITI))</a></li>
+            </ul>
+			<p style="margin: 0; padding-left: 20px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+			    border-bottom: 2px solid #DCD5C8; line-height: 1.625">获奖情况</p>
+			<ul>
+			    
+		             <li style="line-height: 1.625">2022年度安徽省计算机学会优秀硕士学位论文奖 (导师) </li>
+			    <li style="line-height: 1.625">2022年度安徽省优秀硕士学位论文奖 (导师) </li>
+			    <li style="line-height: 1.625">2021年第三届全国高校计算机能力挑战赛(决赛)优秀指导老师（本科） </li>
+			    <li style="line-height: 1.625">2021年度安徽省计算机学会优秀硕士学位论文奖 (导师) </li>
+		            <li style="line-height: 1.625">2021年度第七届安徽省互联网+(决赛）优秀指导老师（本科）</li>
+			    <li style="line-height: 1.625">2014年度中国计算机学会优秀博士学位论文奖 (全国共10名) </li>
+			    <li style="line-height: 1.625">2014年度加拿大亚太数学科学研究院（PIMS）博士后奖学金（全国共14名）</li>
+			    <li style="line-height: 1.625">2014年度ASE (Academy of Science and Engineering)大数据科学奉献奖</li>
+			    <li style="line-height: 1.625">2013年度西蒙菲沙大学博士后奖学金 (Ebco Eppich Fellowship Award)。</li>
+			</ul>
+        </div>
+        <div id="Awards" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+			<p style="margin: 0; padding-left: 20px; padding-top: 50px;  padding-bottom: 10px;font-size: 24px; font-weight: bold;
+			    border-bottom: 2px solid #DCD5C8; line-height: 1.625">科研项目</p>
+			<ul>
+                 <li style="line-height: 1.625"><a target="_blank">国家自然科学基金面上项目: 面向隐私保护数据的联邦因果关系推断算法研究(No.62376087), 2024.01-2027.12, 在研，主持</a></li>
+		<li style="line-height: 1.625"><a target="_blank">科技部科技创新2030-“新一代人工智能”重大项目: 跨媒体因果推断与可信机器学习(No. 2021ZD0111801),2021.12-2025.11, 在研，主持（子课题负责人）</a></li>
+		<li style="line-height: 1.625"><a target="_blank">科技部科技创新2030-“新一代人工智能”重大项目: 常识知识学习与因果分析(No. 2020AAA0106100), 2020.11-2024.10, 在研，主持（课题负责人）</a></li>
+                  <li style="line-height: 1.625"><a target="_blank">国家自然科学基金面上项目: 面向多源高维数据的局部因果关系挖掘研究(No.61876206), 2019.01-2022.12, 已结题, 主持</a></li>
+		<li style="line-height: 1.625"><a target="_blank">智能信息处理山西省重点实验室开放课题: 高维数据中的因果推断问题研究, CICIP2020003, 2020.10-2022.09, 已结题, 主持</a></li>
+                <li style="line-height: 1.625"><a target="_blank">教育部创新团队: 多源海量动态信息处理, IRT13059, 2018.01-2020.12, 已结题, 参加（骨干成员）</a></li>
+                <li style="line-height: 1.625"><a target="_blank">澳大利亚研究理事会(ARC)项目, Develop efficient data mining methods for evidence based decision making, 2017.01-2019.12, 已结题，参加（主要完成人）</a></li>
+                <li style="line-height: 1.625"><a target="_blank">澳大利亚研究理事会(ARC)项目, Efficient causal discovery from observational data, 2017.01-2019.12, 已结题, 参加（主要完成人）</a></li>
+			</ul>
+            
+        </div>
+        <div id="Student Achievements" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+            <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">学生成就</p>
+            <ul>
+                <li style="line-height: 1.625">2023-08: 博士生郭贤杰获2023年度国家留学基金委公派留学奖学金（新加坡南洋理工大学学习一年）！</li>
+		<li style="line-height: 1.625">2022-06: 本科生曹大元、宋余琨，硕士生胡帅博荣获2023年第25届中国机器人及人工智能大赛(全国决赛)二等奖！</li>
+		<li style="line-height: 1.625">2023-06: 硕士生黄简俐的研究成果被《IEEE Transactions on Big Data (TBD)》正式录用(CCF C类)</li> 
+		<li style="line-height: 1.625">2022-06: 博士生李玉玲同学的研究成果被《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)</li>
+		<li style="line-height: 1.625">2023-04: 博士生郭贤杰的研究成果被《IEEE Transactions on Knowledge and Data Engineering (TKDE)》正式录用(CCF A类)</li> 
+		<li style="line-height: 1.625">2023-01: 硕士生杨雅静的硕士学位论文荣获2022年度安徽省计算机学会优秀硕士学位论文奖!</li>
+		<li style="line-height: 1.625">2022-12: 博士生郭贤杰的硕士学位论文荣获2022年度安徽省优秀硕士学位论文奖!</li>
+		<li style="line-height: 1.625">2022-12: 本科生宋余琨获2022年第四届全国高校计算机能力挑战赛C++组全国（决赛）一等奖!</li>
+		<li style="line-height: 1.625">2022-10: 博士生李玉玲同学的研究成果被自然语言处理领域顶级会议EMNLP'22录用(CCF B类,清华A类)</li> 
+	        <li style="line-height: 1.625">2022-08: 博士生郭贤杰同学的研究成果被数据挖掘领域顶级会议CIKM'22录用(CCF B类)</li> 
+		<li style="line-height: 1.625">2022-05: 本科生陶震、张君瑞、杨辰荣获2022年（第15届）中国大学生计算机设计大赛安徽省赛一等奖</li></li>
+		<li style="line-height: 1.625">2022-05: 博士生郭贤杰同学的研究成果被《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)</li>
+		<li style="line-height: 1.625">2022-03: 蔡明珠同学（硕士）荣获合肥工业大学优秀毕业生和安徽省优秀毕业生称号</li></li>
+		<li style="line-height: 1.625">2022-03: 杨雅静同学（硕士）荣获合肥工业大学优秀毕业生和安徽省优秀毕业生称号</li></li>
+		<li style="line-height: 1.625">2021-12: 博士生郭贤杰同学的硕士毕业论文荣获安徽省计算机学会优秀硕士学位论文奖</li>
+                <li style="line-height: 1.625">2021-12: 博士生郭贤杰同学的研究成果被一区期刊《Information Sciences》正式录用(CCF B类)!</li>
+                <li style="line-height: 1.625">2021-12: 硕士生曹逸文的研究成果被数据挖掘领域国际知名学术会议PAKDD'22正式录用(CCF C类)!</li>
+                <li style="line-height: 1.625">2021-12: 博士生王云霞的研究成果被《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)!</li>
+                <li style="line-height: 1.625">2021-12: 博士生王云霞的研究成果被人工智能领域国际顶级学术会议AAAI'22正式录用(CCF A类)!</li>
+	        <li style="line-height: 1.625">2021-12: 本科生解弘艺、张君瑞、杨辰三位同学获2021年第三届全国高校计算机能力挑战赛-人工智能应用赛决赛二等奖</li>
+                <li style="line-height: 1.625">2021-10: 蔡明珠(研三)和杨雅静(研三)两位同学荣获国家研究生奖学金</li>
+                <li style="line-height: 1.625">2021-10: 杨帅同学(博三)荣获国家研究生奖学金</li>
+                <li style="line-height: 1.625">2021-09: 硕士生杨雅静的研究成果被《ACM Transactions on Knowledge Discovery from Data (TKDD)》正式录用(CCF B类)!</li>
+		<li style="line-height: 1.625">2021-08: 博士生杨帅的论文被国内计算机领域权威中文期刊《软件学报》正式录用！(CCF A类）</li>   
+                <li style="line-height: 1.625">2021-07: 本科生解弘艺、陶震、张君瑞、刘高杰、杨辰五位同学荣获安徽省第七届互联网+大学生创新创业大赛创意组金奖一项</li>
+                <li style="line-height: 1.625">2021-07: 硕士生蔡明珠的研究成果被《IEEE Transactions on Neural Networks and Learning Systems(TNNLS)》正式录用(CCF B类)</li>
+                <li style="line-height: 1.625">2021-05: 团队首届硕士生刘超凡、郭贤杰两位同学顺利通过硕士论文答辩！</li>
+                <li style="line-height: 1.625">2021-06: 博士生杨帅的研究成果被《IEEE Transactions on Knowledge and Data Engineering (TKDE)》正式录用(CCF A类)!</li>
+                <li style="line-height: 1.625">2021-05: 本科生解弘艺、陶震、张君瑞、刘高杰获批国家级大学生创新创业项目一项</li>
+                <li style="line-height: 1.625">2021-04: 郭贤杰同学（硕士）荣获安徽省优秀毕业生称号</li>
+                <li style="line-height: 1.625">2021-02: 博士生李玉玲的研究成果被《IEEE Transactions on Audio, Speech and Language Processing (TASLP)》正式录用(CCF B类, 清华A类)</li>
+                <li style="line-height: 1.625">2020-10:  郭贤杰同学（研三）荣获国家研究生奖学金</li>
+		<li style="line-height: 1.625">2020-10:  博士生杨帅的研究成果被《IEEE Transactions on Big Data (TBD)》正式录用(CCF C类)!</li>
+                <li style="line-height: 1.625">2020-02:  博士生杨帅的研究成果被《IEEE Transactions on Cybernetics(TCYB)》正式录用(CCF B类)!</li>
+            </ul>
+        </div>
+        <div id="Courses" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+            <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">教学工作</p>
+            <p style="padding-left: 20px; font-weight: bold">教学情况：</p>
+            <ul>
+                <li style="line-height: 1.625">
+                    <a target="_blank" style="color: black">
+                        人工智能原理(本科)</a>
+                </li>
+                <li style="line-height: 1.625">
+                    <a target="_blank" style="color: black">
+                        人工智能前沿专题(硕士、博士)</a>
+                </li>
+                <li style="line-height: 1.625">
+                    <a target="_blank" style="color: black">
+                        数据挖掘与大数据分析前沿(硕士)</a>
+                </li>
+                				<li style="line-height: 1.625">
+				    <a target="_blank" style="color: black">
+				        人工智能专业导论(本科)</a>
+				</li>
+            </ul>
+            
+        </div>
+        <div id="Publications" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+            <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625"> 主要论著</p>
+	   <p style="padding-left: 20px; font-weight: bold">Preprint (*博士生, **硕士生):</p>
+            <ol>
+		    <li style="line-height: 1.625"> Yuling Li*, <b>Kui Yu</b>, Yuhong Zhang, and Xindong Wu. Learning Relation-Specific Representations for Few-shot Knowledge Graph Completion. arXiv preprint arXiv:2203.11639 (2022).
+		    </li>
+		   
+		    <li style="line-height: 1.625"><b>Kui Yu</b>, Jiuyong Li, and Lin Liu. A Review on Algorithms for Constraint-based Causal Discovery. arXiv:1611.03977 [cs.AI] (2016).
+                </li> 
+	    </ol>   
+            <p style="padding-left: 20px; font-weight: bold">Journal Paper (*博士生, **硕士生):</p>
+            <ol>
+
+		     <li style="line-height: 1.625"> <b>Kui Yu</b>, Zhaolong Ling, Lin Liu, Peipei Li, Hao Wang, and Jiuyong Li. Feature Selection for Efficient Local-to-Global Bayesian Network Structure Learning. ACM Transactions on Knowledge Discovery from Data (TKDD), accepted, 2023.
+                </li>   
+		    <li style="line-height: 1.625"> Jianli Huang**,Xianjie Guo*, <b>Kui Yu</b>, Fuyuan Cao and Jiye Liang. Towards Privacy-Aware Causal Structure Learning in Federated Setting. IEEE Transactions on Big Data (TBD), accepted, 2023. 
+		    </li> 
+		    <li style="line-height: 1.625"> Yuling Li*, <b>Kui Yu</b>, Yuhong Zhang, Jiye Liang and Xindong Wu. Adaptive Prototype Interaction Network for Few-shot Knowledge Graph Completion. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), accepted, 2023. 
+		    </li> 
+		    <li style="line-height: 1.625"> Xianjie Guo*, <b>Kui Yu</b>, Lin Liu, Peipei Li, and Jiuyong Li. Adaptive Skeleton Construction for Accurate DAG Learning. IEEE Transactions on Knowledge and Data Engineering (TKDE), accepted, 2023. 
+		    </li> 
+		    <li style="line-height: 1.625"> Shuai Yang,  Xianjie Guo, <b>Kui Yu</b>, Xiaoling Huang, Tingting Jiang, Jin He and Lichuang Gu. Causal Feature Selection in the Presence of Sample Selection Bias. ACM Transactions on Intelligent Systems and Technology (TIST), accepted, 2023.
+		     </li>  
+		     <li style="line-height: 1.625"> Debo Cheng, Jiuyong Li, Lin Liu, <b>Kui Yu</b>, Thuc Duy Le, and Jixue Liu.  Discovering Ancestral Instrumental Variables for Causal Inference from Observational Data. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 10.1109/TNNLS.2023.3262848, 2023.
+		     </li>    
+		    <li style="line-height: 1.625"> Yuhong Zhang, Jianqing Wu, <b>Kui Yu</b>, and Xindong Wu. Independent Relation Representation with Line Graph for Cross-Lingual Entity Alignmen. IEEE Transactions on Knowledge and Data Engineering (TKDE), accepted,2022. 
+		    </li>    
+		<li style="line-height: 1.625"> Zhaolong Ling, Ying Li, Yiwen Zhang, Peng zhou, <b>Kui Yu</b>, and Xindong Wu. A Light Causal Feature Selection Approach to High-Dimensional Data. IEEE Transactions on Knowledge and Data Engineering (TKDE), DOI: 10.1109/TKDE.2022.3218786,2022. 
+		    </li>
+		 <li style="line-height: 1.625"> Zhaolong Ling, <b>Kui Yu</b>, Yiwen Zhang, Lin Liu, Jiuyong Li. Causal Learner: A Toolbox for Causal Structure and Markov Blanket Learning. Pattern Recognition Letters (PRL), 163:92-95,2022.
+                </li>
+		 <li style="line-height: 1.625">Zhaolong Ling, Bo Li, Yiwen Zhang, <b>Kui Yu</b>, and Xindong Wu. Causal Feature Selection with Efficient Spouses Discovery. IEEE Transactions on Big Data (TBD), DOI: 10.1109/TBDATA.2022.3178472,2022.
+                </li>
+		<li style="line-height: 1.625">Xianjie Guo*, <b>Kui Yu</b>, Lin Liu, Fuyuan Cao, and Jiuyong Li. Causal Feature Selection with Dual Correction. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), DOI: 10.1109/TNNLS.2022.3178075, 2022.
+                </li>
+		<li style="line-height: 1.625">Peipei Li, Yingying Liu, Yang Hu, Yuhong Zhang, Xuegang Hu, and <b>Kui Yu</b>. A Drift-Sensitive Distributed LSTM Method for Short Text Steam Classification. IEEE Transactions on Big Data (TBD), DOI: 10.1109/TBDATA.2022.3164239, 2022.
+                </li>
+		<li style="line-height: 1.625">Debo Cheng, Jiuyong Li, Lin Liu, Thuc Duy Le, Jixue Liu, and <b>Kui Yu</b>. Sufficient Dimension Reduction for Average Causal Effect Estimation. Data Mining and Knowledge Discovery (DMKD), 36(3): 1174-1196,2022.
+                </li>
+                <li style="line-height: 1.625">Xianjie Guo*, <b>Kui Yu</b>, Fuyuan Cao, Peipei Li, and Hao Wang. Error-Aware Markov Blanket Learning for Causal Feature Selection. Information Science, 589: 849-877, 2022.
+                </li>
+                <li style="line-height: 1.625">Zhaolong Ling, <b>Kui Yu</b>, Lin Liu, Yiwen Zhang, and Xindong Wu. PSL: an Algorithm for Partial Bayesian Network Structure Learning. ACM Transactions on Knowledge Discovery from Data (TKDD), 16(5): 1-25, 2022.
+                </li>
+                <li style="line-height: 1.625">Yunxia Wang*,Fuyuan Cao, <b>Kui Yu</b>, and Jiye Liang. Local Causal Discovery in Multiple Manipulated Datasets. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), DOI: 10.1109/TNNLS.2021.3139389, 2022.
+                </li>
+                <li style="line-height: 1.625">Debo Cheng*, Jiuyong Li, Lin Liu, <b>Kui Yu</b>, Thuc Duy Le, Jixue Liu. Toward Unique and Unbiased Causal Effect Estimation From Data With Hidden Variables. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), DOI: 10.1109/TNNLS.2021.3133337,2022.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Yajing Yang, and Wei Ding. Causal Feature Selection with Missing Data. ACM Transactions on Knowledge Discovery from Data (TKDD), 16(4): 1-24, 2022.
+                </li>
+                <li style="line-height: 1.625">Shuai Yang*, <b>Kui Yu</b>, Fuyuan Cao, Lin Liu, Hao Wang, and Jiuyong Li. Learning Causal Representations for Robust Domain Adaptation. IEEE Transactions on Knowledge and Data Engineering (TKDE), 10.1109/TKDE.2021.3119185, 2021.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Mingzhu Cai, Xingyu Wu, Lin Liu, and Jiuyong Li. Multi-Label Feature Selection: a Local Causal Structure Learning Approach. IEEE Transactions on Neural Networks and Learning Systems (TNNLS),10.1109/TNNLS.2021.3111288, 2021.
+                </li>
+                <li style="line-height: 1.625">Junlong Li**, Peipei Li, Xuegang Hu, and <b>Kui Yu</b>. Learning common and label-specific features for multi-Label classification with correlation information. Pattern Recognition, 121:108259, 2022.
+                </li>
+                <li style="line-height: 1.625">Fei Liu*, Xuegang Hu, Chenyang Bu, and <b>Kui Yu</b>. Fuzzy Bayesian Knowledge Tracing. IEEE Transactions on Fuzzy Systems (TFS), 30(7):2412 - 2425, 2022.
+                </li>
+                <li style="line-height: 1.625">Shuai Yang*, Hao Wang, <b>Kui Yu</b>, Fuyan Cao, and Xindong Wu. Towards Efficient Local Causal Structure Learning. IEEE Transactions on Big Data (TBD).  8：1592-1609, 2022.
+                </li>
+                <li style="line-height: 1.625">Xiulin Zheng**, Peipei Li, Xuegang Hu, <b>Kui Yu</b>. Semi-supervised Classification on Data Streams with Recurring Concept Drift and Concept Evolution. Knowledge-Based Systems, 215:106749, 2021.
+                </li>
+                <li style="line-height: 1.625">Shuai Yang*, <b>Kui Yu</b>, Fuyan Cao, Hao Wang, and Xindong Wu. Dual-Representation based Autoencoder for Domain Adaptation. IEEE Transactions on Cybernetics (TCYB). 52(8), 7464 - 7477, 2022.
+                </li>
+                <li style="line-height: 1.625">Xingyu Wu, Bingbing Jiang, <b>Kui Yu</b>, Huanhuan Chen. Separation and Recovery Markov Boundary Discovery and Its Application in EEG-based Emotion Recognition. Information Science, 571: 262-278, 2021.
+                </li>
+                <li style="line-height: 1.625">Yuling Li*, <b>Kui Yu</b>, and Yuhong Zhang. Learning Cross-Lingual Mappings in Imperfectly Isomorphic Embedding Spaces. IEEE Transactions on Audio, Speech and Language Processing (TASLP), 29: 2630-2642 (2021), 2021.
+                </li>
+                <li style="line-height: 1.625">Yuling Li*, Yuhong Zhang, <b>Kui Yu</b>, and Xuegang Hu. Adversarial training with Wasserstein distance for learning cross-lingual word embeddings. Applied Intelligence, 51(11), 7666-7678, 2021.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Lin Liu, and Jiuyong Li. A Unified View of Causal and Non-causal Feature Selection. ACM Transactions on Knowledge Discovery from Data (TKDD), 15(4): 63:1-63:46, 2021.
+                </li>
+                <li style="line-height: 1.625">Jiuyong Li, Weijia Zhang, Lin Liu, <b>Kui Yu</b>, Thuc Duy Le, and Jixue Liu. A General Framework for Causal Classification. International Journal of Data Science and Analytics, 11(2): 127-139, 2021.
+                </li>
+                <li style="line-height: 1.625">Zhaolong Lin*, <b>Kui Yu</b>, Hao Wang, Lei Li, and Xindong Wu. Using Feature Selection for Local Causal Structure Learning. IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI), 5(4): 530-540 (2021).
+                </li>
+                <li style="line-height: 1.625">Xinyu Wu, Bingbing Jiang, <b>Kui Yu</b>, Chunyan Miao, and Huanhuan Chen. Accurate Markov Boundary Discovery for Causal Feature Selection. IEEE Transactions on Cybernetics (TCYB), 50(12): 4983-4996 (2020).
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xianjie Guo, Lin Liu, Jiuyong Li, Hao Wang, Zhaolong Ling, Xindong Wu. Causality-based Feature Selection: Methods and Evaluations. ACM Computing Surveys, 53(5): 111:1-111:36 (2020).
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Lin Liu, Jiuyong Li, Wei Ding, and Thuc Le. Multi-Source Causal Feature Selection. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 42(9): 2240-2256, 2020.
+                </li>
+                <li style="line-height: 1.625">Hao Wang, Zhaolong Lin, <b>Kui Yu</b> and Xindong Wu. Towards Efficient and Effective Discovery of Markov Blankets for Feature Selection. Information Science, 509: 227-242 (2020).
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Lin Liu, and Jiuyong Li. Learning Markov Blankets from Multiple Interventional Datasets. IEEE Transactions on Neural Networks and Learning Systems (TNNLS),31(6), 2005-2019, 2020.
+                </li>
+                <li style="line-height: 1.625">Zhaolong Lin*, <b>Kui Yu</b>, Hao Wang, Lin Liu, Wei Ding, and Xindong Wu. BAMB: A Balanced Markov Blanket Discovery Approach to Feature Selection. ACM Transactions on Intelligent Systems and Technology (TIST),10(5): 52:1-52:25 (2019). 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b> and Huanhuan Chen. Markov boundary-based outlier Mining. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 30(4): 1259-1264 (2019) 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Lin Liu, Jiuyong Li, and Huanhuan Chen. Mining Markov Blanket without Causal Sufficiency. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 29(12): 6333-6347 (2018).
+                </li>
+                <li style="line-height: 1.625">Jing Yang, Xiaoxue Guo, Ning An, Aiguo Wang, and <b>Kui Yu</b>. Streaming Feature-based Causal Structure Learning Algorithm with Symmetrical Uncertainty. Information Sciences, 467: 708-724 (2018). 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Wei Ding, Yang Mu, and Hao Wang. Markov Blanket Feature Selection using Representative Sets. IEEE Transactions on Neural Networks and Learning Systems (TNNLS). 28(11): 2775-2788, 2017. 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Wei Ding, and Xindong Wu. LOFS: A Library of Online Streaming Feature Selection. Knowledge-Based Systems (KBS), 113(2016),1-3. 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Wei Ding, and Jian Pei. Scalable and Accurate Online Feature Selection for Big Data. ACM Transactions on Knowledge Discovery from Data (TKDD), 11(2),1:39, 2016. 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Wei Ding, and Hao Wang. (2012) Exploring Causal Relationships with Streaming Features. The Computer Journal, 55(9): 1103-1117.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Wei Ding, Dan A. Simovici, Hao Wang, Jian Pei, and Xindong Wu. Classification with Streaming Features: An Emerging Pattern Mining Approach. ACM Transactions on Knowledge Discovery from Data (TKDD), 9(4): 30:1-30:31 (2015). 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Wei Ding, Hao Wang, and Xindong Wu. (2013) Bridging Causal Relevance and Pattern Discriminability: Mining Emerging Patterns from High-Dimensional Data. IEEE Transactions on Knowledge and Data Engineering (TKDE), 25(12): 2721-2739.
+                </li>
+                <li style="line-height: 1.625">Xindong Wu, <b>Kui Yu</b>, Wei Ding, Hao Wang, and Xingquan Zhu. (2013) Online Feature Selection with Streaming Features. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 35(5): 1178-1192. 
+                </li>
+               
+            </ol>
+            <p style="padding-left: 20px; font-weight: bold">Conference Paper (*博士生, **硕士生)：</p>
+            <ol>
+		    
+		    <li style="line-height: 1.625">Jindi Li**, <b>Kui Yu</b>, Yuling Li, and Yuhong Zhang. TransD-Based Multi-Hop Meta Learning for Few-Shot Knowledge Graph Completion. Proceedings of 2023 the International Joint Conference on Neural Networks (IJCNN'23), Gold Coast, Australia,June 18-23, 2023.
+                </li>
+		<li style="line-height: 1.625">Yuwei Wang**, Yuling Li*, <b>Kui Yu</b>, and Yimin Hu. Knowledge-Enhanced Hierarchical Transformers for Emotion-Cause Pair Extraction. Proceedings of the 27th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD'23, 143/822, long paper), Osaka, Japan, May 25-28, 2023.
+                </li>
+		<li style="line-height: 1.625">Yuling Li*, <b>Kui Yu</b>, Xiaoling Huang, and Yuhong Zhang. Learning Inter-Entity-Interaction for Few-Shot Knowledge Graph Completion. Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing(EMNLP'22,long paper), Abu Dhabi, UAE, December 7-11, 2022.
+                </li>
+		<li style="line-height: 1.625">Xianjie Guo*, Yujie Wang**, Xiaoling Huang, Shuai Yang and <b>Kui Yu</b>. Bootstrap-based Causal Structure Learning. Proceedings of the 31st ACM International Conference on Information and Knowledge Management (CIKM'22, regular paper), October 17-22, 656–665, 2022, Atlanta, Georgia, USA.
+                </li>
+		<li style="line-height: 1.625">Yiwen Cao**, <b>Kui Yu</b>, Xiaoling Huang, and Yujie Wang. A New Skeleton-Neural DAG Learning Approach. Proceedings of the 26th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD'22), May 16-19, 626–638, 2022, Chengdu, China.
+                </li>
+                <li style="line-height: 1.625">Yunxia Wang*, Fuyuan Cao, <b>Kui Yu</b>, and Jiye Liang. Efficient Causal Structure Learning from Multiple Interventional Datasets with Unknown Targets. The Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI'22), 36(8), 8584-8593, 2022.
+                </li>
+                <li style="line-height: 1.625">Yujie Wang**, Shuai Yang, Xianjie Guo, and <b>Kui Yu</b>. Improving Gradient-based DAG Learning by Structural Asymmetry. The 12th IEEE International Conference on Big Knowledge (ICBK 2021), 2021.
+                </li>
+                <li style="line-height: 1.625">Wentao Hu**, Shuai Yang, Xianjie Guo, and , <b>Kui Yu</b>. Accelerating Learning Bayesian Network Structures by Reducing Redundant CI Tests. The 12th IEEE International Conference on Big Knowledge (ICBK 2021), 2021.
+                </li>
+                <li style="line-height: 1.625">Xiang Wang, Xiaoyong Li, Junxing Zhu, Zichen Xu, Kaijun Ren, Weimin Zhang, Xinwang Liu, and <b>Kui Yu</b>. A Local Similarity-Preserving Framework for Nonlinear Dimensionality Reduction with Neural Networks. International Conference on Database Systems for Advanced Applications (DASFAA 2021), 376-391, 2021. 
+                </li>
+                <li style="line-height: 1.625">Debo Cheng*, Jiuyong Li, Lin Liu, Jixue Liu, <b>Kui Yu</b> and Thuc Duy Le. Causal query in observational data with hidden variables. The 24th European Conference on Artificial Intelligence (ECAI'20), Santiago de Compostela, Spain, June 8-12, 2020. 
+                </li>
+                <li style="line-height: 1.625">Xinyu Wu, Bingbing Jiang, <b>Kui Yu</b>, Huanhuan Chen, and Chunyan Miao. Multi-label Causal Feature Selection. The 34th AAAI Conference on Artificial Intelligence (AAAI'20), February 7-12, 6430-6437, New York, USA.
+                </li>
+                <li style="line-height: 1.625">Bingbing Jiang, Xinyu Wu**, <b>Kui Yu</b>, and Huanhuan Chen. Joint Semi-supervised Feature Selection and Classification through Bayesian Approach. The 33th AAAI Conference on Artificial Intelligence (AAAI'19), 3983-3990, January 27- February 1, 2019 , Honolulu, Hawaii, USA. 
+                </li>
+                <li style="line-height: 1.625">Yong Zhuang, <b>Kui Yu</b>, Dawei Wang, and Wei Ding. An Evaluation of Big Data Analytics in Feature Selection for Long-lead Extreme Floods Forecasting. Proceedings of the 13th IEEE International Conference on Networking, Sensing and Control (ICNSC 2016), Mexico City, Mexico, April 28-30, 2016. 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Dawei Wang, Wei Ding, David L. Small, Shafiqul Islam, Jian Pei, and Xindong Wu. Tornado Forecasting with Multiple Markov Boundaries. Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining(KDD 2015), 10-13 August, Sydney, Australia.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Wei Ding, and Pei Jian. Towards Scalable and Accurate Online Feature Selection for Big Data. Proceedings of the 14th IEEE International Conference on Data Mining (ICDM 2014), Shenzhen,China, December 14-17, 2014.  
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Zan Zhang, Yang Mu, Hao Wang, and Wei Ding. Markov Blanket Feature Selection with Non-Faithful Data Distributions. Proceedings of the 13th IEEE International Conference on Data Mining (ICDM 2013), Dallas, Texas, December 7-10, 2013, 857-866. 
+                </li>
+                <li style="line-height: 1.625">Dawei Wang, Wei Ding, <b>Kui Yu</b>, Xindong Wu, Ping Chen, David L. Small, and Shafiqul Islam. Towards long-lead forecasting of extreme flood events: a data mining framework for precipitation cluster precursors identification. Proceedings of the 19th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2013), Chicago, IL, USA, August 11-14, 2013, 1285-1293.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Wei Ding, Dan A. Simovici, and Xindong Wu. Mining Emerging Patterns by Streaming Feature Selection. Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2012), Beijing, China, August 12-16, 2012, 60-68.
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Wei Ding, and Hao Wang. Causal Associative Classification. Proceedings of the 11th IEEE International Conference on Data Mining (ICDM 2011), Vancouver, Canada, December 11-14, 2011, 914-923. 
+                </li>
+                <li style="line-height: 1.625">Xindong Wu, <b>Kui Yu</b>, Hao Wang, and Wei Ding. Online Streaming Feature Selection. Proceedings of the 27th International Conference on Machine Learning (ICML 2010), Haifa, Israel, June 21-24, 2010, 1159-1166. 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Xindong Wu, Hao Wang, and Wei Ding. Causal Discovery from Streaming Features. Proceedings of the 10th IEEE International Conference on Data Mining (ICDM 2010), Sydney Australia, December 14-17, 2010, 1163-1168. 
+                </li>
+                <li style="line-height: 1.625"><b>Kui Yu</b>, Hao Wang, and Xindong Wu. A Parallel Algorithm for Learning Bayesian Networks. Proceedings of the 11th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2007) , Nanjing, China, May 22-25, 2007, 1055-1063. 
+                </li>
+            </ol>
+            <p style="padding-left: 20px; font-weight: bold">中文期刊文章 (*博士生, **硕士生):</p>
+            <ol>
+                <li style="line-height: 1.625">杨帅*，王浩, 俞奎, 曹付元. 基于实例加权和双分类器的稳定学习算法. 软件学报, 2021
+                </li>
+                <li style="line-height: 1.625">姚宏亮, 贾虹宇, 杨静, 俞奎. 基于分层动态贝叶斯网络的股市趋势扰动推理算法. 模式识别与人工智能, 2022.
+                </li>
+            </ol>
+		<p style="padding-left: 20px; font-weight: bold">发明专利:</p>
+		 <ol>
+		<li style="line-height: 1.625">俞奎，刘超凡，李培培. 一种面向动态医疗数据的因果特征提取方法, 申请号：202111196507.5, 专利申请日期：2021年10月14日.
+                </li>
+                <li style="line-height: 1.625">俞奎，王雨薇，李玉玲，解弘艺. 一种基于元学习与知识图谱的商品推荐方法, 申请号：202210397786.X, 专利申请日期：2022年4月15日.
+                </li>
+                 <li style="line-height: 1.625">俞奎，李金迪，李玉玲，王雨薇. 一种基于图注意力机制的因果常识知识库构建方法, 申请号：2023108588665, 专利申请日期：2023年7月13日.
+                </li>
+	      <li style="line-height: 1.625">俞奎, 王雨薇, 李玉玲，李金迪. 一种基于元学习的医学常识知识图谱自动化构建方法, 申请号：2023108588650, 专利申请日期：2023年7月13日.
+                </li>
+           </ol>
+        </div>
+        <div id="Professional Services" class="tabcontent" style="width: 70%; margin-left: 10px;  display: none;">
+            <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">学术兼职</p>
+            <ol>
+                <li style="line-height: 1.625">安徽省人工智能学会副理事长</li>
+		<li style="line-height: 1.625">安徽省人工智能学会因果与认知智能专委会主任</li>
+                <li style="line-height: 1.625">中国人工智能学会不确定性人工智能专委会委员</li>
+		<li style="line-height: 1.625">中国人工智能学会粒计算与知识发现专委会委员</li>
+		<li style="line-height: 1.625">中国计算机学会人工智能与模式识别专业委员会通讯委员</li>
+                <li style="line-height: 1.625">国际顶级学术会议程序委员会领域委员(Senior PC/PC member)</li>
+            </ol>
+            <p style="padding-left: 20px; font-weight: bold">国际顶级学术会议程序委员会委员(Senior PC/PC member): </p>
+            <ul>
+                <li style="line-height: 1.625">ICML: ICML'22</li>
+				<li style="line-height: 1.625">AAAI: AAAI'23, AAAI'22, AAI'21, AAAI'20</li>
+                <li style="line-height: 1.625">IJCAI: IJCAI'22, IJCAI'17, IJCAI'15</li>
+                <li style="line-height: 1.625">KDD: KDD'22, KDD'21, KDD'20, KDD'19, KDD'18, KDD'16, KDD'17</li>
+                <li style="line-height: 1.625">SDM: SDM'22, SDM'21</li>
+                <li style="line-height: 1.625">CIKM: CIKM'22,CIKM'21, CIKM'20, CIKM'19, CIKM'18, CIKM'17</li>
+                <li style="line-height: 1.625">PAKDD: PAKDD'22, PAKDD'21, PAKDD'20, PAKDD'19, PAKDD'18, PAKDD'17, PAKDD'16</li>
+                <li style="line-height: 1.625">The 2016-2019 ACM SIGKDD Workshop on Causal Discovery (in conjunction with KDD'16, KDD'17, KDD'18, KDD'19)</li>
+			</ul>
+            <p style="padding-left: 20px; font-weight: bold">期刊审稿: </p>
+            <ul>
+                <li style="line-height: 1.625">ACM Transactions on Knowledge Discovery from Data</li>
+                <li style="line-height: 1.625">IEEE Transactions on Neural Networks and Learning Systems.</li>
+                <li style="line-height: 1.625">IEEE Transactions on Knowledge and Data Engineering</li>
+                <li style="line-height: 1.625">IEEE Transactions on Emerging Topics in Computational Intelligence</li>
+                <li style="line-height: 1.625">ACM Transactions on Intelligent Systems and Technology</li>
+                <li style="line-height: 1.625">Machine Learning</li>
+                <li style="line-height: 1.625">Knowledge and Information Systems (Springer)</li>
+                <li style="line-height: 1.625">Knowledge-based Systems (Elsevier)</li>
+                <li style="line-height: 1.625">SCIENCE CHINA Information Sciences (Springer)</li>
+            </ul>
+		
+	      <p style="padding-left: 20px; font-weight: bold">会议/论坛组织: </p>
+		
+	    <ul>
+	   <li style="line-height: 1.625">论坛主席： 中国计算机学会2023年计算机应用大会（NCCA'23） “因果机器学习及其应用论坛” （2023年7月16-19日，苏州） </li>
+	     </ul>
+		<ul>
+	   <li style="line-height: 1.625">大会主席：The 13th IEEE International Conference on Knowledge Graph (ICKG'22) （2022年11月30日-12月1日线上） </li>
+	     </ul>
+	   <ul>
+	   <li style="line-height: 1.625">论坛主席： 安徽省人工智能学会2022年 “可信机器学习论坛” （2022年12月3日线上） </li>
+	     </ul>
+	      <ul>
+	   <li style="line-height: 1.625">论坛主席： 中国计算机学会2021年人工智能大会 (CCFAI'21) “因果学习论坛” （2021年7月22-25日，烟台） </li>
+	     </ul>
+        </div>
+        <div id="Group Members" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+            <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">团队成员</p>
+	  <p style="padding-left: 20px; font-weight: bold">在站博士后</p>
+             <ul>
+                <li style="line-height: 1.625">黄晓玲博士： 2021年9月进博士流动站</li>
+             </ul>
+            <p style="padding-left: 20px; font-weight: bold">在读博/硕研究生</p>
+		
+		<p style="padding-left: 20px">2023级:</p>
+               <ul>
+                <li style="line-height: 1.625">博士: 汪玉杰</li>
+                <li style="line-height: 1.625">硕士：袁力冰，柳家起，徐梦文</li>
+                </ul>
+		<p style="padding-left: 20px">2022级:</p>
+               <ul>
+                <li style="line-height: 1.625">博士: 宁学成，缪佳李</li>
+                <li style="line-height: 1.625">硕士：赵永盛，夏惊鸿，胡帅博（中国机器人及人工智能大赛(全国决赛)二等奖1项），荣晨 (与王浩教授共同指导)，刘子豪(与王浩教授共同指导)</li>
+               </ul>
+            <p style="padding-left: 20px">2021级:</p>
+              <ul>
+                <li style="line-height: 1.625">博士: 郭贤杰 (国家硕士研究生奖学金，省优秀毕业生，安徽省优秀硕士学位论文奖，安徽省计算机学会优秀硕士学位论文奖，国家留学基金委公派留学奖学金，1篇IEEE TKDE, 1篇 IEEE TNNLS, 1篇IEEE TBD, 1篇 ACM TIST, 1篇CIKM'22, 1篇 Information Sciences)</li>
+                <li style="line-height: 1.625">硕士：王雨薇(1篇 PAKDD'23,专利1项)，李金迪(1篇 IJCNN'23)，黄简俐（1篇IEEE TBD），相国督 (与王浩教共同作指导)</li>
+              </ul>
+            <p style="padding-left: 20px">2020级: </p>
+              <ul>
+                <li style="line-height: 1.625">博士：李玉玲 (1篇EMNLP'22, 1篇IEEE TNNLS, 1篇 IEEE TASLP, 1篇 Applied Intelligence)</li>
+              </ul>
+          
+            <p style="padding-left: 20px; font-weight: bold">已毕业研究生：</p>
+		
+             <p style="padding-left: 20px">2020级硕士: </p>
+               <ul>
+		    <li style="line-height: 1.625">硕士：汪玉杰 (合肥工业大学，攻读博士学位)，曹逸文(芯原微电子有限公司)</li>
+	       </ul>	
+	   <p style="padding-left: 20px">2019级博士与硕士: </p>
+             <ul>
+                <li style="line-height: 1.625">博士：杨帅 (2019.09-2022.05，安徽农业大学，特任教授，1篇IEEE TKDE, 1篇IEEE TYCB, 1篇IEEE TBD, 1篇Knowledge Based System, 1篇 Expert Systems and Applications, 1篇软件学报, 国家博士研究生奖学金)</li>
+                <li style="line-height: 1.625">硕士：杨雅静（中国银行，安徽省计算机学会优秀硕士学位论文奖，国家硕士研究生奖学金,省优秀毕业生），蔡明珠（华为,国家硕士研究生奖学金，省优秀毕业生），胡闻涛（华为）</li>
+             </ul>	
+		
+        <p style="padding-left: 20px">2018级硕士:</p>
+            <ul>
+                <li style="line-height: 1.625">刘超凡(科大讯飞研究院)，郭贤杰(攻读博士学位, 合肥工业大学)</li>
+            </ul>
+            <p style="padding-left: 20px">2016级博士(与王浩教授共同指导):</p>
+            <ul>
+                <li style="line-height: 1.625">凌兆龙(2016.09-2020.06，安徽大学, 讲师，1篇ACM TIST,2篇 ACM TKDD,1篇IEEE TETCI,1篇 Information Sciences)</li>
+            </ul>
+        </div>
+        <div id="Research Links" class="tabcontent" style="width: 70%; margin-left: 10px; display: none;">
+            <p style="margin: 0; padding-left: 20px; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">软件代码</p>
+            <ol>
+                <li style="line-height: 1.625"><a target="_blank" href="https://github.com/kuiy/CausalFS" style="color: black"> CausalFS: An open-source package of causal feature selection and causal (Bayesian network) structure learning (C/C++ version)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="https://github.com/wt-hu/pyCausalFS" style="color: black">pyCausalFS: An open-source package of causal feature selection and causal (Bayesian network) structure learning (Python version) </a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://bigdata.ahu.edu.cn/causal-learner" style="color: black"> Causal Learner: An open-source package of causal feature selection and causal (Bayesian network) structure learning (Matlab version)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="https://github.com/kuiy/LOFS" style="color: black"> LOFS: A Library of Online Streaming Feature Selection.</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="https://github.com/kuiy/ELCS" style="color: black">Source codes for the paper “Towards Efficient Local Causal Structure Learning”</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="https://github.com/kuiy/DRAE " style="color: black">Source codes for the paper “Dual-Representation based Autoencoder for Domain Adaptation”</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="https://github.com/Xianjie-Guo" style="color: black">Other source codes please see: https://github.com/Xianjie-Guo</a></li>
+            </ol>
+        </div>
+    </div>
+    <script>
+    function switchTab(evt, tabId) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabId).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+</div>
+</body></html>
